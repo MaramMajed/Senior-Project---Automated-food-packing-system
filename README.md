@@ -96,6 +96,3 @@ Full methodology, wiring tables, test procedures, and safety assessment are docu
 
 **Supervisor:** Dr. Thangam Palaniswamy — Department of Electrical and Computer Engineering, King Abdulaziz University
 
-## License
-
-Add a license of your choice (e.g. MIT) if you intend for others to reuse this code.
