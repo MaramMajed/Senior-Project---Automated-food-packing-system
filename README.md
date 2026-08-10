@@ -4,7 +4,7 @@ An end-to-end automated meal-assembly system that takes a customer's order from 
 
 Senior graduation project · Department of Electrical & Computer Engineering, King Abdulaziz University · 2026
 
-![Final-prototype](assets/final-prototype.png)
+![Final-prototype](final-prototype.png)
 
 ---
 
