@@ -57,7 +57,7 @@ A Raspberry Pi acts as the main controller, coordinating two ESP32 sub-controlle
 | Low-inventory alert | at 20% | **20%, 14/14 triggers correct** | ✅ |
 | Order-ready notification | < 10 s | **5 s avg, 100% delivered** | ✅ |
 
-Full methodology, wiring tables, test procedures, and safety assessment are documented in the [Final Design Report](docs/Team8_FDR.pdf).
+Full methodology, wiring tables, test procedures, and safety assessment are documented in the Final Design Report.
 
 ## Repository Structure
 
