@@ -28,11 +28,11 @@ Fast-food kitchens lose speed and accuracy to staff shortages and manual packing
 
 A Raspberry Pi acts as the main controller, coordinating two ESP32 sub-controllers over UART for the individual dispensing stations, while Firebase bridges the web front end and the embedded hardware.
 
-![System architecture diagram](assets/system-architecture.png)
+![System architecture diagram](system-architecture.png)
 
 ## Ordering Interface
 
-![Ordering interface on kiosk touchscreen](assets/ordering-interface.png)
+![Ordering interface on kiosk touchscreen](ordering-interface.png)
 
 ## Tech Stack
 
