@@ -47,46 +47,7 @@ A Raspberry Pi acts as the main controller, coordinating two ESP32 sub-controlle
 | Notifications | A9G GSM/GPRS module (SMS) |
 | Alerts | LED, buzzer, push button (manual refill/reset) |
 
-## Performance
 
-| Objective | Target | Result | Status |
-|---|---|---|---|
-| System accuracy | ≥ 90% | **93.3%** | ✅ |
-| Assembly time | ≤ 300 s | **29.3 s** | ✅ |
-| Dispensing accuracy | ≥ 95% | **100%** | ✅ |
-| Low-inventory alert | at 20% | **20%, 14/14 triggers correct** | ✅ |
-| Order-ready notification | < 10 s | **5 s avg, 100% delivered** | ✅ |
-
-Full methodology, wiring tables, test procedures, and safety assessment are documented in the Final Design Report.
-
-## Repository Structure
-
-> Adjust this to match how your code is actually organized — this reflects the subsystems described in the project report.
-
-```
-.
-├── web/                  # Kiosk front end + Firebase config
-│   ├── index.html
-│   ├── firebase.json
-│   └── .firebaserc
-├── raspberry-pi/         # Main controller
-│   ├── listener.py       # Firebase listener, order dispatch
-│   ├── actuators.py      # Vertical/horizontal linear actuator control
-│   └── serviceAccountKey.json.example
-├── esp32/                # Station firmware (dispenser control)
-│   ├── dispenser_station.ino
-│   └── README.md
-├── docs/
-│   └── Team8_FDR.pdf      # Full Final Design Report
-└── assets/                # Images used in this README
-```
-
-## Getting Started
-
-1. **Web kiosk** — deploy `web/` to Firebase Hosting (or serve locally) and point the Firebase config in `index.html` at your project.
-2. **Raspberry Pi** — install `firebase-admin`, add your `serviceAccountKey.json`, and run `listener.py` to start watching the `orders` node.
-3. **ESP32 stations** — flash `dispenser_station.ino` to each station's ESP32; confirm UART wiring to the Raspberry Pi matches the pin tables in the FDR (Section 5.1–5.2).
-4. Power the actuators/motors from a 12V supply and the logic boards from 5V, sharing a common ground.
 
 ## Team
 
